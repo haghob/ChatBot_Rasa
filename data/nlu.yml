@@ -1,0 +1,31 @@
+version: "3.1"
+
+
+nlu:
+- intent: looking_for_movie
+  examples: |
+    - I'm looking for a movie.
+    - Can you recommend a good film?
+    - Any suggestions for a movie?
+    - Help me find a movie
+
+- intent: inform_movie_genre
+  examples: |
+    - I want a comedy
+    - Give me some action movies
+    - Recommend a romantic film
+  
+- intent: thank_you
+  examples: |
+    - Thanks!
+    - Thank you for your help
+
+- intent: ask_if_bot_present
+  examples: |
+    - Are you here?
+    - Is anyone there?
+
+- intent: affirm
+  examples: |
+    - Yes
+    - Yeah 

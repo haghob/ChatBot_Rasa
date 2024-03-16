@@ -1,0 +1,61 @@
+version: "3.1"
+
+stories:
+- story: greet_and_request_movie
+  steps:
+  
+  - user: |
+      Hello
+    intent: greet
+  - action: utter_greet
+  
+  - user: |
+        I'm looking for a movie.
+    intent: looking_for_movie
+  - action: utter_ask_genre
+
+  - user: |
+      I want a comedy
+    intent: inform_movie_genre
+  - action: utter_recommend_movie
+
+- story: Movie recommendation
+  steps:
+  - user: |
+        I'm looking for a movie.
+    intent: looking_for_movie
+  - action: utter_ask_genre
+  
+  - user:
+        I want to watch a comedy.
+    intent: inform_movie_genre
+  - action:
+        utter_recommend_movie
+
+  - user: |
+      Thank you !
+    intent: goodbye
+  - action: utter_did_that_help
+
+  - user: |
+      GoodBye.
+    intent: goodbye
+  - action: utter_goodbye
+
+
+
+#here
+
+- story: Movie recommendation
+  steps:
+  - user: |
+        I'm looking for a movie.
+    intent: looking_for_movie
+  - action: utter_ask_genre
+  
+  - user:
+        I want to watch a comedy.
+    intent: inform_movie_genre
+  - action:
+        utter_recommend_movie
+  

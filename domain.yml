@@ -1,0 +1,45 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - looking_for_movie
+  - inform_movie_genre
+  - thank_you
+  - ask_if_bot_present
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_ask_genre:
+    - text: "Sure, I can help you find a movie. What genre are you in the mood for? You can say something like 'I want a comedy.'"
+
+  utter_happy:
+    - text: "Great!"
+
+  utter_recommend_movie:
+    - text: "Great! I'll find a movie for you."
+
+  utter_thank_you:
+    - text: "You're welcome! Feel free to ask if you need more help."
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+
+  utter_did_that_help:
+    - text: "I hope this could help."
+
+actions:
+  - action_recommend_movie
+  - action_ask_genre
+  - action_thank_you
+  - action_bot_present
+
+session_config:
+  session_expiration_time: 600
