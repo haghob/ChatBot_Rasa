@@ -19,6 +19,17 @@ stories:
     intent: inform_movie_genre
   - action: utter_recommend_movie
 
+  - user: |
+      Thank you !
+    intent: thank_you
+  - action: utter_did_that_help
+
+  - user: |
+      GoodBye.
+    intent: goodbye
+  - action: utter_goodbye
+
+
 - story: Movie recommendation
   steps:
   - user: |
@@ -34,28 +45,10 @@ stories:
 
   - user: |
       Thank you !
-    intent: goodbye
+    intent: thank_you
   - action: utter_did_that_help
 
   - user: |
       GoodBye.
     intent: goodbye
   - action: utter_goodbye
-
-
-
-#here
-
-- story: Movie recommendation
-  steps:
-  - user: |
-        I'm looking for a movie.
-    intent: looking_for_movie
-  - action: utter_ask_genre
-  
-  - user:
-        I want to watch a comedy.
-    intent: inform_movie_genre
-  - action:
-        utter_recommend_movie
-  
