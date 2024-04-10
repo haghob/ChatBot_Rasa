@@ -6,7 +6,7 @@
 - Création d'un fichier js
 - Modification du fichier credentials.yml
 
-#Intégration du modèle RASA dan sle site web
+# Intégration du modèle RASA dans le site web
 
 Si l'API Rasa fonctionne correctement, on intégre le widget de chat dans le site Web.  
 **rasaChatwidget.js** & **index.html** 
